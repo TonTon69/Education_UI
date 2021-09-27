@@ -291,6 +291,11 @@ body::-webkit-scrollbar-thumb {
   font-weight: 600;
 }
 
+.main {
+  min-height: 100vh;
+  padding: 78px 28px 78px 104px;
+}
+
 .footer {
   position: fixed;
   inset: auto 0 0 0;
