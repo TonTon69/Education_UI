@@ -27,4 +27,207 @@ body::-webkit-scrollbar-thumb {
   border-radius: 20px;
   border: 3px solid #b4bcc3;
 }
+
+.header {
+  position: fixed;
+  inset: 0 0 auto 0;
+  height: 66px;
+  background-color: #fff;
+  border-bottom: 1px solid #f0f0f0;
+  -webkit-box-shadow: 0px 4px 12px 0 #f7f7f7;
+          box-shadow: 0px 4px 12px 0 #f7f7f7;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  padding: 0 28px;
+  z-index: 9;
+}
+
+.header__logo {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-flex: 1;
+      -ms-flex: 1 1;
+          flex: 1 1;
+}
+
+.header__logo img {
+  width: 36px;
+  height: 36px;
+  -ms-flex-negative: 0;
+      flex-shrink: 0;
+  -o-object-fit: contain;
+     object-fit: contain;
+}
+
+.header__logo h4 {
+  font-size: 1.2rem;
+  margin: 0 0 0 16px;
+  color: #333;
+}
+
+.header__body {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-flex: 1;
+      -ms-flex: 1 1;
+          flex: 1 1;
+}
+
+.header__search {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  width: 420px;
+  border: 1px solid #dce0e3;
+  height: 40px;
+  border-radius: 20px;
+  padding: 0 16px;
+}
+
+.header__search:focus-within {
+  border-color: #f05123;
+}
+
+.header__search ion-icon {
+  width: 1em;
+  color: #a8b2b8;
+}
+
+.header__search input {
+  font-size: 14px;
+  outline: none;
+  border: none;
+  padding: 0 10px;
+  -webkit-box-flex: 1;
+      -ms-flex: 1 1;
+          flex: 1 1;
+  height: 100%;
+}
+
+.header__actions {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: end;
+      -ms-flex-pack: end;
+          justify-content: flex-end;
+  -webkit-box-flex: 1;
+      -ms-flex: 1 1;
+          flex: 1 1;
+}
+
+.header__actions--noti {
+  padding: 8px;
+}
+
+.header__actions--noti ion-icon {
+  vertical-align: -0.125em;
+  width: 0.875em;
+  color: #707070;
+  font-size: 1.5rem;
+}
+
+.header__actions--avatar img {
+  width: 24px;
+  height: 24px;
+  margin-left: 12px;
+  border-radius: 50%;
+  -o-object-fit: cover;
+     object-fit: cover;
+  cursor: pointer;
+}
+
+.header__actions--userMenu {
+  background: #fff;
+  position: absolute;
+  inset: 0px 0px auto auto;
+  min-width: 265px;
+  padding: 8px 24px;
+  border-radius: 10px;
+  -webkit-transform: translate(-28px, 45px);
+          transform: translate(-28px, 45px);
+  -webkit-transition: -webkit-transform 0.3s ease;
+  transition: -webkit-transform 0.3s ease;
+  transition: transform 0.3s ease;
+  transition: transform 0.3s ease, -webkit-transform 0.3s ease;
+  opacity: 0;
+  visibility: hidden;
+  z-index: 10;
+}
+
+.header__actions--userMenu.show {
+  opacity: 1;
+  visibility: visible;
+  -webkit-transform: translate(-28px, 55px);
+          transform: translate(-28px, 55px);
+}
+
+.header__actions--userMenu .user {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.header__actions--userMenu .user img {
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+  -o-object-fit: cover;
+     object-fit: cover;
+  margin-left: 0;
+}
+
+.header__actions--userMenu .user__info {
+  margin-left: 12px;
+}
+
+.header__actions--userMenu .user__info .name {
+  font-weight: 600;
+}
+
+.header__actions--userMenu .user__info .username {
+  font-size: 14px;
+  color: #757575;
+  margin-top: 4px;
+}
+
+.header__actions--userMenu .list {
+  padding-left: 0;
+  margin: 0;
+}
+
+.header__actions--userMenu .list__item:hover .list__link {
+  color: #111;
+}
+
+.header__actions--userMenu .list__link {
+  color: #666;
+  display: block;
+  padding: 10px 0;
+  text-decoration: none;
+}
 /*# sourceMappingURL=app.css.map */
