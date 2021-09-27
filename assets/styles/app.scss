@@ -51,17 +51,15 @@ body {
 
 .header {
     position: fixed;
-    top: 0;
-    left: 0;
-    right: 0;
-    z-index: 9;
+    inset: 0 0 auto 0;
     height: 66px;
-    background-color: #fff;
+    background-color: $white-color;
     border-bottom: 1px solid #f0f0f0;
     box-shadow: 0px 4px 12px 0 #f7f7f7;
     display: flex;
     align-items: center;
     padding: 0 28px;
+    z-index: 9;
 
     &__logo {
         display: flex;
@@ -142,6 +140,71 @@ body {
                 border-radius: 50%;
                 object-fit: cover;
                 cursor: pointer;
+            }
+        }
+
+        &--userMenu {
+            background: $white-color;
+            position: absolute;
+            inset: 0px 0px auto auto;
+            min-width: 265px;
+            padding: 8px 24px;
+            border-radius: 10px;
+            transform: translate(-28px, 45px);
+            transition: transform 0.3s ease;
+            opacity: 0;
+            visibility: hidden;
+            z-index: 10;
+
+            &.show {
+                opacity: 1;
+                visibility: visible;
+                transform: translate(-28px, 55px);
+            }
+
+            .user {
+                display: flex;
+                align-items: center;
+
+                img {
+                    width: 50px;
+                    height: 50px;
+                    border-radius: 50%;
+                    object-fit: cover;
+                    margin-left: 0;
+                }
+
+                &__info {
+                    margin-left: 12px;
+
+                    .name {
+                        font-weight: 600;
+                    }
+
+                    .username {
+                        font-size: 14px;
+                        color: #757575;
+                        margin-top: 4px;
+                    }
+                }
+            }
+
+            .list {
+                padding-left: 0;
+                margin: 0;
+
+                &__item {
+                    &:hover .list__link {
+                        color: #111;
+                    }
+                }
+
+                &__link {
+                    color: #666;
+                    display: block;
+                    padding: 10px 0;
+                    text-decoration: none;
+                }
             }
         }
     }

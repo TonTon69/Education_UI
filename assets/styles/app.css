@@ -30,10 +30,7 @@ body::-webkit-scrollbar-thumb {
 
 .header {
   position: fixed;
-  top: 0;
-  left: 0;
-  right: 0;
-  z-index: 9;
+  inset: 0 0 auto 0;
   height: 66px;
   background-color: #fff;
   border-bottom: 1px solid #f0f0f0;
@@ -46,6 +43,7 @@ body::-webkit-scrollbar-thumb {
       -ms-flex-align: center;
           align-items: center;
   padding: 0 28px;
+  z-index: 9;
 }
 
 .header__logo {
@@ -158,5 +156,78 @@ body::-webkit-scrollbar-thumb {
   -o-object-fit: cover;
      object-fit: cover;
   cursor: pointer;
+}
+
+.header__actions--userMenu {
+  background: #fff;
+  position: absolute;
+  inset: 0px 0px auto auto;
+  min-width: 265px;
+  padding: 8px 24px;
+  border-radius: 10px;
+  -webkit-transform: translate(-28px, 45px);
+          transform: translate(-28px, 45px);
+  -webkit-transition: -webkit-transform 0.3s ease;
+  transition: -webkit-transform 0.3s ease;
+  transition: transform 0.3s ease;
+  transition: transform 0.3s ease, -webkit-transform 0.3s ease;
+  opacity: 0;
+  visibility: hidden;
+  z-index: 10;
+}
+
+.header__actions--userMenu.show {
+  opacity: 1;
+  visibility: visible;
+  -webkit-transform: translate(-28px, 55px);
+          transform: translate(-28px, 55px);
+}
+
+.header__actions--userMenu .user {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.header__actions--userMenu .user img {
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+  -o-object-fit: cover;
+     object-fit: cover;
+  margin-left: 0;
+}
+
+.header__actions--userMenu .user__info {
+  margin-left: 12px;
+}
+
+.header__actions--userMenu .user__info .name {
+  font-weight: 600;
+}
+
+.header__actions--userMenu .user__info .username {
+  font-size: 14px;
+  color: #757575;
+  margin-top: 4px;
+}
+
+.header__actions--userMenu .list {
+  padding-left: 0;
+  margin: 0;
+}
+
+.header__actions--userMenu .list__item:hover .list__link {
+  color: #111;
+}
+
+.header__actions--userMenu .list__link {
+  color: #666;
+  display: block;
+  padding: 10px 0;
+  text-decoration: none;
 }
 /*# sourceMappingURL=app.css.map */
