@@ -253,7 +253,7 @@ body::-webkit-scrollbar-thumb {
 }
 
 .sidebar__link {
-  color: #1a1a1a;
+  color: #404040;
   width: 72px;
   height: 72px;
   display: -webkit-box;
@@ -331,10 +331,8 @@ body::-webkit-scrollbar-thumb {
 }
 
 .main .subjects__link .brand {
-  width: 35%;
+  width: 40%;
   height: 100%;
-  background: -webkit-gradient(linear, left top, right top, from(green), to(blue));
-  background: linear-gradient(to right, green, blue);
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -349,6 +347,8 @@ body::-webkit-scrollbar-thumb {
   font-weight: bold;
   border-top-left-radius: 16px;
   border-bottom-left-radius: 16px;
+  -webkit-clip-path: polygon(0% 0%, 75% 0%, 100% 50%, 75% 100%, 0% 100%);
+          clip-path: polygon(0% 0%, 75% 0%, 100% 50%, 75% 100%, 0% 100%);
 }
 
 .main .subjects__link .subject {
@@ -363,13 +363,15 @@ body::-webkit-scrollbar-thumb {
       -ms-flex-direction: column;
           flex-direction: column;
   margin: 0 auto;
-  font-size: 30px;
-  font-weight: bold;
-  color: green;
 }
 
-.main .subjects__link .subject span {
-  margin-bottom: 6px;
+.main .subjects__link .subject h4 {
+  font-size: 22px;
+  font-weight: 500;
+}
+
+.main .subjects__link .subject ion-icon {
+  font-size: 40px;
 }
 
 .footer {

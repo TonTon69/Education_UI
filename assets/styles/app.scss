@@ -227,7 +227,7 @@ body {
     justify-content: center;
 
     &__link {
-        color: #1a1a1a;
+        color: #404040;
         width: 72px;
         height: 72px;
         display: flex;
@@ -292,9 +292,8 @@ body {
             border: 1px solid #dee2e6;
 
             .brand {
-                width: 35%;
+                width: 40%;
                 height: 100%;
-                background: linear-gradient(to right, green, blue);
                 display: flex;
                 align-items: center;
                 justify-content: center;
@@ -303,6 +302,7 @@ body {
                 font-weight: bold;
                 border-top-left-radius: 16px;
                 border-bottom-left-radius: 16px;
+                clip-path: polygon(0% 0%, 75% 0%, 100% 50%, 75% 100%, 0% 100%);
             }
 
             .subject {
@@ -310,12 +310,14 @@ body {
                 align-items: center;
                 flex-direction: column;
                 margin: 0 auto;
-                font-size: 30px;
-                font-weight: bold;
-                color: green;
 
-                span {
-                    margin-bottom: 6px;
+                h4 {
+                    font-size: 22px;
+                    font-weight: 500;
+                }
+
+                ion-icon {
+                    font-size: 40px;
                 }
             }
         }
