@@ -91,7 +91,7 @@
                         </a>
                     </li>
                     <li class="sidebar__item">
-                        <a href="/subjects.html" class="sidebar__link">
+                        <a href="" class="sidebar__link">
                             <ion-icon name="book"></ion-icon>
                             <span>Học</span>
                         </a>
@@ -112,7 +112,96 @@
             </div>
             <main class="main">
                 <!-- code ở đây -->
-                code o day
+                <section class="subjects">
+                    <ul class="nav nav-tabs" id="myTab" role="tablist">
+                        <li class="nav-item" role="presentation">
+                            <button
+                                class="nav-link active"
+                                id="grade10-tab"
+                                data-bs-toggle="tab"
+                                data-bs-target="#grade10"
+                                type="button"
+                                role="tab"
+                                aria-controls="grade10"
+                                aria-selected="true"
+                            >
+                                Khối 10
+                            </button>
+                        </li>
+                        <li class="nav-item" role="presentation">
+                            <button
+                                class="nav-link"
+                                id="grade11-tab"
+                                data-bs-toggle="tab"
+                                data-bs-target="#grade11"
+                                type="button"
+                                role="tab"
+                                aria-controls="grade11"
+                                aria-selected="false"
+                            >
+                                Khối 11
+                            </button>
+                        </li>
+                        <li class="nav-item" role="presentation">
+                            <button
+                                class="nav-link"
+                                id="grade12-tab"
+                                data-bs-toggle="tab"
+                                data-bs-target="#grade12"
+                                type="button"
+                                role="tab"
+                                aria-controls="grade12"
+                                aria-selected="false"
+                            >
+                                Khối 12
+                            </button>
+                        </li>
+                    </ul>
+                    <div class="tab-content mt-5">
+                        <div
+                            class="tab-pane fade show active"
+                            id="grade10"
+                            role="tabpanel"
+                            aria-labelledby="grade10-tab"
+                        >
+                            <h4 class="fw-bold mb-4">Môn học khối 10</h4>
+                            <div class="row">
+                                <div class="col-md-3">
+                                    <div class="subjects__item">
+                                        <a href="" class="subjects__link">
+                                            <div class="brand">PC3</div>
+                                            <div class="subject">
+                                                <span>Toán 10</span>
+                                                <ion-icon
+                                                    name="calculator"
+                                                ></ion-icon>
+                                            </div>
+                                        </a>
+                                        <h5 class="mt-3">
+                                            <a href="">Toán 10</a>
+                                        </h5>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div
+                            class="tab-pane fade"
+                            id="grade11"
+                            role="tabpanel"
+                            aria-labelledby="grade11-tab"
+                        >
+                            2
+                        </div>
+                        <div
+                            class="tab-pane fade"
+                            id="grade12"
+                            role="tabpanel"
+                            aria-labelledby="grade12-tab"
+                        >
+                            3
+                        </div>
+                    </div>
+                </section>
             </main>
             <footer class="footer">
                 <a href="/">
