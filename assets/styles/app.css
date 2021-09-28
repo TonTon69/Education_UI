@@ -479,13 +479,11 @@ body::-webkit-scrollbar-thumb {
   background: rgba(0, 0, 0, 0.01);
 }
 
-.main .subject__detail .subject__detail,
-.main .learning__list .subject__detail {
+.main .subject__detail {
   padding: 0 40px;
 }
 
-.main .subject__detail .subject__detail--list li,
-.main .learning__list .subject__detail--list li {
+.main .subject__detail--list li {
   line-height: 1.6;
   font-size: 16px;
   margin-bottom: 10px;
@@ -494,12 +492,61 @@ body::-webkit-scrollbar-thumb {
   padding-left: 35px;
 }
 
-.main .subject__detail .subject__detail--list li ion-icon,
-.main .learning__list .subject__detail--list li ion-icon {
+.main .subject__detail--list li ion-icon {
   font-size: 20px;
   position: absolute;
   top: 3px;
   left: 0;
+}
+
+.main .subject__detail .chart {
+  width: 100%;
+  background: #fff;
+  border-radius: 8px;
+  padding: 20px 30px;
+}
+
+.main .subject__detail .chart .btn-instruct {
+  outline: none;
+  border: none;
+  background: transparent;
+}
+
+.main .subject__detail .chart__item {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  padding: 4px 0;
+}
+
+.main .subject__detail .chart__item img {
+  margin-right: 12px;
+}
+
+.main .subject__detail .chart__item .name {
+  -webkit-box-flex: 1;
+      -ms-flex: 1 1;
+          flex: 1 1;
+  font-weight: 500;
+}
+
+.main .subject__detail .chart__item ion-icon {
+  color: red;
+  font-size: 24px;
+}
+
+.main .subject__detail .chart .modal-dialog {
+  max-width: 800px;
+  -webkit-transition: all 0.3s ease;
+  transition: all 0.3s ease;
+}
+
+.main .subject__detail .chart .modal-dialog .btn-close {
+  -webkit-box-shadow: unset;
+          box-shadow: unset;
 }
 
 .main .learning {

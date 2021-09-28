@@ -157,7 +157,7 @@
                                     <span class="text-uppercase">Luyện bài tập</span>
                                 </a>
                             </div>
-                            <ul class="ps-0 mb-0 pt-5 subject__detail--list">
+                            <ul class="ps-0 mb-0 pt-4 subject__detail--list">
                                 <li>
                                     <ion-icon name="barcode-outline"></ion-icon>
                                     <span>Tổng số <b>71</b> bài học</span>
@@ -167,9 +167,75 @@
                                     <span>Học mọi lúc, mọi nơi</span>
                                 </li>
                             </ul>
+                            <div class="chart shadow mt-4">
+                                <div class="text-center">
+                                    <div class="d-flex align-items-center justify-content-center mb-3">
+                                        <img src="./assets/img/graph-bar.svg" width="32" alt="">
+                                        <h6 class="fw-bold mb-0 ms-3">BẢNG XẾP HẠNG MÔN TOÁN 10</h6>
+                                    </div>
+                                    <button class="text-danger btn-instruct" type="button" data-bs-toggle="modal"
+                                        data-bs-target="#instructModal">
+                                        Cách tính điểm? Xem tại đây!
+                                    </button>
+                                    <div class="modal fade" id="instructModal" tabindex="-1"
+                                        aria-labelledby="instructModalLabel" aria-hidden="true">
+                                        <div class="modal-dialog">
+                                            <div class="modal-content">
+                                                <div class="modal-header">
+                                                    <h5 class="modal-title" id="instructModalLabel">
+                                                        Cách tính điểm và quy định xếp hạng
+                                                    </h5>
+                                                    <button type="button" class="btn-close" data-bs-dismiss="modal"
+                                                        aria-label="Close"></button>
+                                                </div>
+                                                <div class="modal-body">
+                                                    <div class="mb-3">
+                                                        Vấn đề bạn gặp phải là gì?
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <ul class="ps-0 mb-0 mt-4">
+                                        <li class="chart__item">
+                                            <img src="./assets/img/gold.png" alt="">
+                                            <span class="name">Huỳnh Minh Hoàng</span>
+                                            <div class="d-flex align-items-center">
+                                                <span class="me-1">10000</span>
+                                                <ion-icon name="heart-circle"></ion-icon>
+                                            </div>
+                                        </li>
+                                        <hr>
+                                        <li class="chart__item">
+                                            <img src="./assets/img/silver.png" alt="">
+                                            <span class="name">Le Min Ho</span>
+                                            <div class="d-flex align-items-center">
+                                                <span class="me-1">1000</span>
+                                                <ion-icon name="heart-circle"></ion-icon>
+                                            </div>
+                                        </li>
+                                        <hr>
+                                        <li class="chart__item">
+                                            <img src="./assets/img/bronze.png" alt="">
+                                            <span class="name">Park Min Young</span>
+                                            <div class="d-flex align-items-center">
+                                                <span class="me-1">100</span>
+                                                <ion-icon name="heart-circle"></ion-icon>
+                                            </div>
+                                        </li>
+                                        <hr>
+                                        <li class="chart__item">
+                                            <span class="name">Haki Yona</span>
+                                            <div class="d-flex align-items-center">
+                                                <span class="me-1">10</span>
+                                                <ion-icon name="heart-circle"></ion-icon>
+                                            </div>
+                                        </li>
+                                    </ul>
+                                </div>
+                            </div>
                         </div>
                     </div>
-                </div>
             </section>
         </main>
         <footer class="footer">
