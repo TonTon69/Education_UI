@@ -1,316 +1,233 @@
 <!DOCTYPE html>
 <html lang="en">
-    <head>
-        <meta charset="UTF-8" />
-        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-        <title>Document</title>
-        <link rel="preconnect" href="https://fonts.googleapis.com" />
-        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-        <link
-            href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
-            rel="stylesheet"
-        />
-        <link
-            href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css"
-            rel="stylesheet"
-            integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC"
-            crossorigin="anonymous"
-        />
-        <link rel="stylesheet" href="./assets/styles/app.css" />
-    </head>
-    <body>
-        <div class="app">
-            <header class="header">
-                <div class="header__logo">
-                    <img
-                        src="https://fullstack.edu.vn/assets/icon/f8_icon.png"
-                        alt=""
-                    />
-                    <h4>Trường THPT Phù Cát 3</h4>
-                </div>
-                <div class="header__body">
-                    <div class="header__search">
-                        <ion-icon name="search"></ion-icon>
-                        <input
-                            type="text"
-                            name="search"
-                            placeholder="Tìm kiếm"
-                        />
-                    </div>
-                </div>
-                <div class="header__actions">
-                    <div class="header__actions--noti">
-                        <ion-icon name="notifications"></ion-icon>
-                    </div>
-                    <div class="header__actions--avatar">
-                        <img
-                            src="https://graph.facebook.com/1200171846994675/picture?width=400&height=400"
-                            alt=""
-                        />
-                    </div>
-                    <div class="header__actions--userMenu shadow">
-                        <div class="user">
-                            <img
-                                src="https://graph.facebook.com/1200171846994675/picture?width=400&height=400"
-                                alt=""
-                            />
-                            <div class="user__info">
-                                <div class="name">Huynh Minh Hoang</div>
-                                <div class="username">@huynh-minh-hoang</div>
-                            </div>
-                        </div>
-                        <hr />
-                        <ul class="list">
-                            <li class="list__item">
-                                <a class="list__link" href=""
-                                    >Thông tin cá nhân</a
-                                >
-                            </li>
-                            <li class="list__item">
-                                <a class="list__link" href=""
-                                    >Kết quả học tập</a
-                                >
-                            </li>
-                        </ul>
-                        <hr />
-                        <ul class="list">
-                            <li class="list__item">
-                                <a class="list__link" href="">Đăng xuất</a>
-                            </li>
-                        </ul>
-                    </div>
-                </div>
-            </header>
-            <div class="sidebar">
-                <ul class="sidebar__list ps-0">
-                    <li class="sidebar__item">
-                        <a href="/" class="sidebar__link">
-                            <ion-icon name="home"></ion-icon>
-                            <span>Home</span>
-                        </a>
-                    </li>
-                    <li class="sidebar__item">
-                        <a href="/subjects.html" class="sidebar__link">
-                            <ion-icon name="book"></ion-icon>
-                            <span>Học</span>
-                        </a>
-                    </li>
-                    <li class="sidebar__item">
-                        <a href="/luyen.html" class="sidebar__link">
-                            <ion-icon name="bulb"></ion-icon>
-                            <span>Luyện</span>
-                        </a>
-                    </li>
-                    <li class="sidebar__item">
-                        <a href="/blog.html" class="sidebar__link">
-                            <ion-icon name="newspaper"></ion-icon>
-                            <span>Blog</span>
-                        </a>
-                    </li>
-                </ul>
+
+<head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+        href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
+        rel="stylesheet" />
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous" />
+    <link rel="stylesheet" href="./assets/styles/app.css" />
+</head>
+
+<body>
+    <div class="app">
+        <header class="header">
+            <div class="header__logo">
+                <img src="https://fullstack.edu.vn/assets/icon/f8_icon.png" alt="" />
+                <h4>Trường THPT Phù Cát 3</h4>
             </div>
-            <main class="main">
-                <!-- code ở đây -->
-                <section class="subjects">
-                    <ul class="nav nav-tabs" id="myTab" role="tablist">
-                        <li class="nav-item" role="presentation">
-                            <button
-                                class="nav-link active"
-                                id="grade10-tab"
-                                data-bs-toggle="tab"
-                                data-bs-target="#grade10"
-                                type="button"
-                                role="tab"
-                                aria-controls="grade10"
-                                aria-selected="true"
-                            >
-                                Khối 10
-                            </button>
+            <div class="header__body">
+                <div class="header__search">
+                    <ion-icon name="search"></ion-icon>
+                    <input type="text" name="search" placeholder="Tìm kiếm" />
+                </div>
+            </div>
+            <div class="header__actions">
+                <div class="header__actions--noti">
+                    <ion-icon name="notifications"></ion-icon>
+                </div>
+                <div class="header__actions--avatar">
+                    <img src="https://graph.facebook.com/1200171846994675/picture?width=400&height=400" alt="" />
+                </div>
+                <div class="header__actions--userMenu shadow">
+                    <div class="user">
+                        <img src="https://graph.facebook.com/1200171846994675/picture?width=400&height=400" alt="" />
+                        <div class="user__info">
+                            <div class="name">Huynh Minh Hoang</div>
+                            <div class="username">@huynh-minh-hoang</div>
+                        </div>
+                    </div>
+                    <hr />
+                    <ul class="list">
+                        <li class="list__item">
+                            <a class="list__link" href="">Thông tin cá nhân</a>
                         </li>
-                        <li class="nav-item" role="presentation">
-                            <button
-                                class="nav-link"
-                                id="grade11-tab"
-                                data-bs-toggle="tab"
-                                data-bs-target="#grade11"
-                                type="button"
-                                role="tab"
-                                aria-controls="grade11"
-                                aria-selected="false"
-                            >
-                                Khối 11
-                            </button>
-                        </li>
-                        <li class="nav-item" role="presentation">
-                            <button
-                                class="nav-link"
-                                id="grade12-tab"
-                                data-bs-toggle="tab"
-                                data-bs-target="#grade12"
-                                type="button"
-                                role="tab"
-                                aria-controls="grade12"
-                                aria-selected="false"
-                            >
-                                Khối 12
-                            </button>
+                        <li class="list__item">
+                            <a class="list__link" href="">Kết quả học tập</a>
                         </li>
                     </ul>
-                    <div class="tab-content mt-5">
-                        <div
-                            class="tab-pane fade show active"
-                            id="grade10"
-                            role="tabpanel"
-                            aria-labelledby="grade10-tab"
-                        >
-                            <h4 class="fw-bold mb-4">Môn học khối 10</h4>
-                            <div class="row">
-                                <div class="col-sm-3">
-                                    <div class="subjects__item">
-                                        <a href="" class="subjects__link">
-                                            <div class="brand">PC3</div>
-                                            <div class="subject">
-                                                <h4>Môn Toán</h4>
-                                                <ion-icon
-                                                    name="calculator"
-                                                ></ion-icon>
-                                            </div>
-                                        </a>
-                                        <h6 class="mt-3">
-                                            <a href="">Toán Học 10</a>
-                                        </h6>
-                                    </div>
+                    <hr />
+                    <ul class="list">
+                        <li class="list__item">
+                            <a class="list__link" href="">Đăng xuất</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </header>
+        <div class="sidebar">
+            <ul class="sidebar__list ps-0">
+                <li class="sidebar__item">
+                    <a href="/" class="sidebar__link">
+                        <ion-icon name="home"></ion-icon>
+                        <span>Home</span>
+                    </a>
+                </li>
+                <li class="sidebar__item">
+                    <a href="/subjects.html" class="sidebar__link">
+                        <ion-icon name="book"></ion-icon>
+                        <span>Học</span>
+                    </a>
+                </li>
+                <li class="sidebar__item">
+                    <a href="/exercises.html" class="sidebar__link">
+                        <ion-icon name="bulb"></ion-icon>
+                        <span>Luyện</span>
+                    </a>
+                </li>
+                <li class="sidebar__item">
+                    <a href="/blog.html" class="sidebar__link">
+                        <ion-icon name="newspaper"></ion-icon>
+                        <span>Blog</span>
+                    </a>
+                </li>
+            </ul>
+        </div>
+        <main class="main">
+            <!-- code ở đây -->
+            <section class="subjects">
+                <ul class="nav nav-tabs" id="myTab" role="tablist">
+                    <li class="nav-item" role="presentation">
+                        <button class="nav-link active" id="grade10-tab" data-bs-toggle="tab" data-bs-target="#grade10"
+                            type="button" role="tab" aria-controls="grade10" aria-selected="true">
+                            Khối 10
+                        </button>
+                    </li>
+                    <li class="nav-item" role="presentation">
+                        <button class="nav-link" id="grade11-tab" data-bs-toggle="tab" data-bs-target="#grade11"
+                            type="button" role="tab" aria-controls="grade11" aria-selected="false">
+                            Khối 11
+                        </button>
+                    </li>
+                    <li class="nav-item" role="presentation">
+                        <button class="nav-link" id="grade12-tab" data-bs-toggle="tab" data-bs-target="#grade12"
+                            type="button" role="tab" aria-controls="grade12" aria-selected="false">
+                            Khối 12
+                        </button>
+                    </li>
+                </ul>
+                <div class="tab-content mt-5">
+                    <div class="tab-pane fade show active" id="grade10" role="tabpanel" aria-labelledby="grade10-tab">
+                        <h4 class="fw-bold mb-4">Môn học khối 10</h4>
+                        <div class="row">
+                            <div class="col-sm-3">
+                                <div class="subjects__item">
+                                    <a href="detail.html" class="subjects__link">
+                                        <div class="brand">PC3</div>
+                                        <div class="subject">
+                                            <h4>Môn Toán</h4>
+                                            <ion-icon name="calculator"></ion-icon>
+                                        </div>
+                                    </a>
+                                    <h6 class="mt-3">
+                                        <a href="detail.html">Toán Học 10</a>
+                                    </h6>
                                 </div>
-                                <div class="col-sm-3">
-                                    <div class="subjects__item">
-                                        <a href="" class="subjects__link">
-                                            <div class="brand">PC3</div>
-                                            <div class="subject">
-                                                <h4>Môn Lý</h4>
-                                                <ion-icon
-                                                    name="logo-react"
-                                                ></ion-icon>
-                                            </div>
-                                        </a>
-                                        <h6 class="mt-3">
-                                            <a href="">Vật Lý 10</a>
-                                        </h6>
-                                    </div>
+                            </div>
+                            <div class="col-sm-3">
+                                <div class="subjects__item">
+                                    <a href="" class="subjects__link">
+                                        <div class="brand">PC3</div>
+                                        <div class="subject">
+                                            <h4>Môn Lý</h4>
+                                            <ion-icon name="logo-react"></ion-icon>
+                                        </div>
+                                    </a>
+                                    <h6 class="mt-3">
+                                        <a href="">Vật Lý 10</a>
+                                    </h6>
                                 </div>
-                                <div class="col-sm-3">
-                                    <div class="subjects__item">
-                                        <a href="" class="subjects__link">
-                                            <div class="brand">PC3</div>
-                                            <div class="subject">
-                                                <h4>Môn Hóa</h4>
-                                                <ion-icon
-                                                    name="thermometer-outline"
-                                                ></ion-icon>
-                                            </div>
-                                        </a>
-                                        <h6 class="mt-3">
-                                            <a href="">Hóa Học 10</a>
-                                        </h6>
-                                    </div>
+                            </div>
+                            <div class="col-sm-3">
+                                <div class="subjects__item">
+                                    <a href="" class="subjects__link">
+                                        <div class="brand">PC3</div>
+                                        <div class="subject">
+                                            <h4>Môn Hóa</h4>
+                                            <ion-icon name="thermometer-outline"></ion-icon>
+                                        </div>
+                                    </a>
+                                    <h6 class="mt-3">
+                                        <a href="">Hóa Học 10</a>
+                                    </h6>
                                 </div>
-                                <div class="col-sm-3">
-                                    <div class="subjects__item">
-                                        <a href="" class="subjects__link">
-                                            <div class="brand">PC3</div>
-                                            <div class="subject">
-                                                <h4>Môn Tiếng Anh</h4>
-                                                <ion-icon
-                                                    name="language"
-                                                ></ion-icon>
-                                            </div>
-                                        </a>
-                                        <h6 class="mt-3">
-                                            <a href="">Tiếng Anh 10</a>
-                                        </h6>
-                                    </div>
+                            </div>
+                            <div class="col-sm-3">
+                                <div class="subjects__item">
+                                    <a href="" class="subjects__link">
+                                        <div class="brand">PC3</div>
+                                        <div class="subject">
+                                            <h4>Môn Tiếng Anh</h4>
+                                            <ion-icon name="language"></ion-icon>
+                                        </div>
+                                    </a>
+                                    <h6 class="mt-3">
+                                        <a href="">Tiếng Anh 10</a>
+                                    </h6>
                                 </div>
-                                <div class="col-sm-3">
-                                    <div class="subjects__item">
-                                        <a href="" class="subjects__link">
-                                            <div class="brand">PC3</div>
-                                            <div class="subject">
-                                                <h4>Môn Sinh</h4>
-                                                <ion-icon
-                                                    name="leaf"
-                                                ></ion-icon>
-                                            </div>
-                                        </a>
-                                        <h6 class="mt-3">
-                                            <a href="">Sinh Học 10</a>
-                                        </h6>
-                                    </div>
+                            </div>
+                            <div class="col-sm-3">
+                                <div class="subjects__item">
+                                    <a href="" class="subjects__link">
+                                        <div class="brand">PC3</div>
+                                        <div class="subject">
+                                            <h4>Môn Sinh</h4>
+                                            <ion-icon name="leaf"></ion-icon>
+                                        </div>
+                                    </a>
+                                    <h6 class="mt-3">
+                                        <a href="">Sinh Học 10</a>
+                                    </h6>
                                 </div>
                             </div>
                         </div>
-                        <div
-                            class="tab-pane fade"
-                            id="grade11"
-                            role="tabpanel"
-                            aria-labelledby="grade11-tab"
-                        >
-                            2
-                        </div>
-                        <div
-                            class="tab-pane fade"
-                            id="grade12"
-                            role="tabpanel"
-                            aria-labelledby="grade12-tab"
-                        >
-                            3
-                        </div>
                     </div>
-                </section>
-            </main>
-            <footer class="footer">
-                <a href="/">
-                    <img
-                        src="https://fullstack.edu.vn/assets/icon/f8_icon.png"
-                        alt=""
-                        width="22"
-                    />
-                </a>
-                <ul class="footer__links">
-                    <li>
-                        <a href="">Giới thiệu</a>
-                    </li>
-                    <li>
-                        <a href="">Giới thiệu</a>
-                    </li>
-                </ul>
-                <ul class="footer__socials">
-                    <li>
-                        <a href=""
-                            ><ion-icon name="logo-facebook"></ion-icon
-                        ></a>
-                    </li>
-                </ul>
-            </footer>
-        </div>
-        <script
-            type="module"
-            src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"
-        ></script>
-        <script
-            nomodule
-            src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"
-        ></script>
-        <script
-            src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
-            integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
-            crossorigin="anonymous"
-        ></script>
-        <script
-            src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"
-            integrity="sha512-894YE6QWD5I59HgZOGReFYm4dnWc1Qt5NtvYSaNcOP+u1T9qYdvdihz0PPSiiqn/+/3e7Jo4EaG7TubfWGUrMQ=="
-            crossorigin="anonymous"
-            referrerpolicy="no-referrer"
-        ></script>
-        <script src="./assets/js/app.js"></script>
-    </body>
+                    <div class="tab-pane fade" id="grade11" role="tabpanel" aria-labelledby="grade11-tab">
+                        2
+                    </div>
+                    <div class="tab-pane fade" id="grade12" role="tabpanel" aria-labelledby="grade12-tab">
+                        3
+                    </div>
+                </div>
+            </section>
+        </main>
+        <footer class="footer">
+            <a href="/">
+                <img src="https://fullstack.edu.vn/assets/icon/f8_icon.png" alt="" width="22" />
+            </a>
+            <ul class="footer__links">
+                <li>
+                    <a href="">Giới thiệu</a>
+                </li>
+                <li>
+                    <a href="">Giới thiệu</a>
+                </li>
+            </ul>
+            <ul class="footer__socials">
+                <li>
+                    <a href="">
+                        <ion-icon name="logo-facebook"></ion-icon>
+                    </a>
+                </li>
+            </ul>
+        </footer>
+    </div>
+    <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
+    <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
+        crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"
+        integrity="sha512-894YE6QWD5I59HgZOGReFYm4dnWc1Qt5NtvYSaNcOP+u1T9qYdvdihz0PPSiiqn/+/3e7Jo4EaG7TubfWGUrMQ=="
+        crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <script src="./assets/js/app.js"></script>
+</body>
+
 </html>

@@ -59,10 +59,11 @@ body {
     }
 }
 
-.btn.btn-primary {
+.btn.btn-primary,
+.btn.btn-secondary,
+.btn.btn-exercise {
     border-color: unset;
     border-radius: 8px;
-    background: $primary-color;
     padding: 8px 24px;
     opacity: 1;
     transition: all 0.3s ease;
@@ -81,20 +82,18 @@ body {
     }
 }
 
-.btn.btn-secondary {
-    border-color: unset;
-    border-radius: 8px;
-    padding: 8px 24px;
-    opacity: 1;
-    transition: all 0.3s ease;
+.btn.btn-primary {
+    background: $primary-color;
+}
 
+.btn.btn-exercise {
+    color: $white-color;
+    background: #fb5533;
+}
+
+.btn.btn-secondary {
     &:hover {
         opacity: 0.8;
-    }
-
-    &:focus {
-        border-color: unset;
-        box-shadow: unset;
     }
 }
 
