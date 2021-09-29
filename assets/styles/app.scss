@@ -452,10 +452,16 @@ body {
             &__item {
                 display: flex;
                 align-items: center;
-                padding: 4px 0;
 
                 img {
                     margin-right: 12px;
+                }
+
+                .avatar {
+                    width: 42px;
+                    height: 42px;
+                    object-fit: cover;
+                    border-radius: 50%;
                 }
 
                 .name {
