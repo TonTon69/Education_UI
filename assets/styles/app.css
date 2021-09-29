@@ -44,24 +44,28 @@ body::-webkit-scrollbar-thumb {
 
 .btn.btn-primary,
 .btn.btn-secondary,
-.btn.btn-exercise {
+.btn.btn-exercise,
+.btn.btn-success {
   border-color: unset;
   border-radius: 8px;
   padding: 8px 24px;
   opacity: 1;
   -webkit-transition: all 0.3s ease;
   transition: all 0.3s ease;
+  color: #fff;
 }
 
 .btn.btn-primary:hover,
 .btn.btn-secondary:hover,
-.btn.btn-exercise:hover {
+.btn.btn-exercise:hover,
+.btn.btn-success:hover {
   opacity: 0.9;
 }
 
 .btn.btn-primary:focus,
 .btn.btn-secondary:focus,
-.btn.btn-exercise:focus {
+.btn.btn-exercise:focus,
+.btn.btn-success:focus {
   border-color: unset;
   -webkit-box-shadow: unset;
           box-shadow: unset;
@@ -69,7 +73,8 @@ body::-webkit-scrollbar-thumb {
 
 .btn.btn-primary .text-uppercase,
 .btn.btn-secondary .text-uppercase,
-.btn.btn-exercise .text-uppercase {
+.btn.btn-exercise .text-uppercase,
+.btn.btn-success .text-uppercase {
   letter-spacing: 1px;
 }
 
@@ -78,12 +83,16 @@ body::-webkit-scrollbar-thumb {
 }
 
 .btn.btn-exercise {
-  color: #fff;
   background: #fb5533;
 }
 
-.btn.btn-secondary:hover {
+.btn.btn-secondary:hover,
+.btn.btn-success:hover {
   opacity: 0.8;
+}
+
+.btn-padding {
+  padding: 4px 12px !important;
 }
 
 .fs-7 {
@@ -352,28 +361,35 @@ body::-webkit-scrollbar-thumb {
   padding: 74px 28px 78px 104px;
 }
 
-.main .subjects {
+.main .subjects,
+.main .exercise {
   padding-left: 40px;
   padding-top: 15px;
 }
 
-.main .subjects .nav-link {
+.main .subjects .nav-link,
+.main .exercise .nav-link {
   color: #333;
 }
 
-.main .subjects .nav-link:hover, .main .subjects .nav-link.active {
+.main .subjects .nav-link:hover, .main .subjects .nav-link.active,
+.main .exercise .nav-link:hover,
+.main .exercise .nav-link.active {
   border-color: #fff #fff #292929 #fff;
 }
 
-.main .subjects .nav-link.active {
+.main .subjects .nav-link.active,
+.main .exercise .nav-link.active {
   font-weight: 600;
 }
 
-.main .subjects__item {
+.main .subjects__item,
+.main .exercise__item {
   margin-bottom: 48px;
 }
 
-.main .subjects__link {
+.main .subjects__link,
+.main .exercise__link {
   position: relative;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -387,7 +403,8 @@ body::-webkit-scrollbar-thumb {
   border: 1px solid #dee2e6;
 }
 
-.main .subjects__link .brand {
+.main .subjects__link .brand,
+.main .exercise__link .brand {
   width: 40%;
   height: 100%;
   display: -webkit-box;
@@ -408,7 +425,8 @@ body::-webkit-scrollbar-thumb {
           clip-path: polygon(0% 0%, 75% 0%, 100% 50%, 75% 100%, 0% 100%);
 }
 
-.main .subjects__link .subject {
+.main .subjects__link .subject,
+.main .exercise__link .subject {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -422,12 +440,14 @@ body::-webkit-scrollbar-thumb {
   margin: 0 auto;
 }
 
-.main .subjects__link .subject h4 {
+.main .subjects__link .subject h4,
+.main .exercise__link .subject h4 {
   font-size: 22px;
   font-weight: 500;
 }
 
-.main .subjects__link .subject ion-icon {
+.main .subjects__link .subject ion-icon,
+.main .exercise__link .subject ion-icon {
   font-size: 40px;
 }
 

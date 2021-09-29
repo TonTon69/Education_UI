@@ -95,15 +95,24 @@
                 <div class="row">
                     <div class="col-sm-8">
                         <div class="learning__content shadow">
-                            <h4 class="title mb-4">
-                                Sự đồng biến, nghịch biến của hàm số
-                            </h4>
+                            <div class="row">
+                                <div class="col-sm-9">
+                                    <h4 class="title mb-0">
+                                        Sự đồng biến, nghịch biến của hàm số
+                                    </h4>
+                                </div>
+                                <div class="col-sm-3 text-end">
+                                    <a href="/exercises.html" class="btn btn-exercise btn-padding rounded-pill fs-7">
+                                        <span class="ms-1">Bài tập vận dụng</span>
+                                    </a>
+                                </div>
+                            </div>
                             <hr />
                             <div class="mt-4 mb-4">
                                 Ghi nội dung tại đây!!!
                             </div>
                             <div class="text-center mt-4 mb-4">
-                                <a href="/exercises.html" class="btn btn-primary">
+                                <a href="/exercises.html" class="btn btn-exercise rounded-pill">
                                     Luyện bài tập vận dụng tại đây
                                 </a>
                             </div>
@@ -125,34 +134,34 @@
                                                 <button type="button" class="btn-close" data-bs-dismiss="modal"
                                                     aria-label="Close"></button>
                                             </div>
-                                            <div class="modal-body">
-                                                <form>
+                                            <form method="get">
+                                                <div class="modal-body">
                                                     <div class="mb-3">
                                                         <label for="message-text" class="col-form-label">
                                                             Vấn đề bạn gặp phải là gì?
                                                         </label>
-                                                        <div class="form-check d-flex align-items-center">
+                                                        <div class="form-check d-flex align-items-center mt-1 mb-1">
                                                             <input class="form-check-input mt-0 me-2" type="radio"
                                                                 name="flexRadioReport" id="flexRadioReport1" />
                                                             <label class="form-check-label" for="flexRadioReport1">
                                                                 Sai nội dung
                                                             </label>
                                                         </div>
-                                                        <div class="form-check d-flex align-items-center">
+                                                        <div class="form-check d-flex align-items-center mt-1 mb-1">
                                                             <input class="form-check-input mt-0 me-2" type="radio"
                                                                 name="flexRadioReport" id="flexRadioReport2" />
                                                             <label class="form-check-label" for="flexRadioReport2">
                                                                 Lý thuyết khó hiểu
                                                             </label>
                                                         </div>
-                                                        <div class="form-check d-flex align-items-center">
+                                                        <div class="form-check d-flex align-items-center mt-1 mb-1">
                                                             <input class="form-check-input mt-0 me-2" type="radio"
                                                                 name="flexRadioReport" id="flexRadioReport3" />
                                                             <label class="form-check-label" for="flexRadioReport3">
                                                                 Nội dung chưa phù hợp (VD: Đã giảm tải,...)
                                                             </label>
                                                         </div>
-                                                        <div class="form-check d-flex align-items-center">
+                                                        <div class="form-check d-flex align-items-center mt-1 mb-1">
                                                             <input class="form-check-input mt-0 me-2" type="radio"
                                                                 name="flexRadioReport" id="flexRadioReport4" />
                                                             <label class="form-check-label" for="flexRadioReport4">
@@ -168,16 +177,17 @@
                                                         <textarea class="form-control" id="message-text" rows="5"
                                                             placeholder="Góp ý lỗi bạn gặp phải với chúng tôi để khắc phục sớm nhất. Cảm ơn, chúc bạn học tập vui vẻ!"></textarea>
                                                     </div>
-                                                </form>
-                                            </div>
-                                            <div class="modal-footer">
-                                                <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">
-                                                    Hủy bỏ
-                                                </button>
-                                                <button type="button" class="btn btn-primary">
-                                                    Gửi
-                                                </button>
-                                            </div>
+                                                </div>
+                                                <div class="modal-footer">
+                                                    <button type="button" class="btn btn-secondary"
+                                                        data-bs-dismiss="modal">
+                                                        Hủy bỏ
+                                                    </button>
+                                                    <button type="submit" class="btn btn-primary">
+                                                        Gửi
+                                                    </button>
+                                                </div>
+                                            </form>
                                         </div>
                                     </div>
                                 </div>

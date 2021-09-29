@@ -61,12 +61,14 @@ body {
 
 .btn.btn-primary,
 .btn.btn-secondary,
-.btn.btn-exercise {
+.btn.btn-exercise,
+.btn.btn-success {
     border-color: unset;
     border-radius: 8px;
     padding: 8px 24px;
     opacity: 1;
     transition: all 0.3s ease;
+    color: $white-color;
 
     &:hover {
         opacity: 0.9;
@@ -87,14 +89,18 @@ body {
 }
 
 .btn.btn-exercise {
-    color: $white-color;
     background: #fb5533;
 }
 
-.btn.btn-secondary {
+.btn.btn-secondary,
+.btn.btn-success {
     &:hover {
         opacity: 0.8;
     }
+}
+
+.btn-padding {
+    padding: 4px 12px !important;     
 }
 
 .fs-7 {
@@ -308,7 +314,8 @@ body {
     min-height: 100vh;
     padding: 74px 28px 78px 104px;
 
-    .subjects {
+    .subjects, 
+    .exercise {
         padding-left: 40px;
         padding-top: 15px;
 
