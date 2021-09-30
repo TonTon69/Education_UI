@@ -377,6 +377,44 @@ body {
         }
     }
 
+    .exercise {
+        blockquote {
+            background: #f7f9fa;
+            border-left: 5px solid red;
+            padding: 18px 24px;
+        }
+
+        .quiz{
+            .form-check{
+                background: #f7f9fa;
+                padding: 0 24px;
+                margin-bottom: 16px;
+                
+                &-input {
+                    margin-left: 0;
+                    cursor: pointer;
+                }
+
+                &-label {
+                    padding: 20px 0;
+                    line-height: 1.5;
+                    flex: 1 1;
+                    cursor: pointer;
+                }
+            }
+
+            .recommend {
+                .modal-dialog {
+                    transition: all 0.3s ease;
+
+                    .btn-close {
+                        box-shadow: unset;
+                    }
+                }
+            }
+        }
+    }
+
     .subject__detail,
     .learning__list {
         .accordion {
