@@ -457,6 +457,31 @@ body::-webkit-scrollbar-thumb {
   padding: 18px 24px;
 }
 
+.main .exercise .quiz {
+  padding-right: 10px;
+  max-height: 550px;
+  overflow-y: auto;
+  -ms-scroll-snap-type: y mandatory;
+      scroll-snap-type: y mandatory;
+}
+
+.main .exercise .quiz::-webkit-scrollbar {
+  width: 8px;
+}
+
+.main .exercise .quiz::-webkit-scrollbar-thumb {
+  background: #b4bcc3;
+  border-radius: 20px;
+  border: 3px solid #b4bcc3;
+  opacity: 0;
+  visibility: hidden;
+}
+
+.main .exercise .quiz.show-scrollbar::-webkit-scrollbar-thumb {
+  opacity: 1;
+  visibility: visible;
+}
+
 .main .exercise .quiz .form-check {
   background: #f7f9fa;
   padding: 0 24px;

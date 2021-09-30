@@ -31,4 +31,17 @@ $(document).ready(function () {
             document.links[i].classList.add("active");
         }
     }
+
+    // custom scrollbar exercise
+    const quiz = $(".quiz");
+    quiz.scroll(function() {
+        if (this.scrollTop > 0) {
+            quiz.addClass("show-scrollbar");
+        }
+        else {
+            setTimeout(function() {
+               quiz.removeClass("show-scrollbar");
+            }, 2000);
+        }
+    });
 });
