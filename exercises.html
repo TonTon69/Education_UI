@@ -38,7 +38,10 @@
                 </div>
                 <div class="header__actions--userMenu shadow">
                     <div class="user">
-                        <img src="https://graph.facebook.com/1200171846994675/picture?width=400&height=400" alt="" />
+                        <div class="user__avatar">
+                            <img src="https://graph.facebook.com/1200171846994675/picture?width=400&height=400"
+                                alt="" />
+                        </div>
                         <div class="user__info">
                             <div class="name">Huynh Minh Hoang</div>
                             <div class="username">@huynh-minh-hoang</div>
@@ -215,74 +218,73 @@
                             <div class="mt-4 mb-4">
                                 <h6 class="fw-bold mb-3">Câu 1</h6>
                                 <div class="question">
-                                    cho hàm số abcxyx
+                                    Tìm mô đun của số phức z = 5 - 4i
                                 </div>
                                 <div class="options mt-4">
                                     <div class="form-check d-flex align-items-center">
                                         <input class="form-check-input mt-0 me-3" type="radio" name="flexRadioDefault"
                                             id="flexRadioDefault1">
                                         <label class="form-check-label" for="flexRadioDefault1">
-                                            A. Default radio
+                                            A. 9
                                         </label>
                                     </div>
                                     <div class="form-check d-flex align-items-center">
                                         <input class="form-check-input mt-0 me-3" type="radio" name="flexRadioDefault"
                                             id="flexRadioDefault2">
                                         <label class="form-check-label" for="flexRadioDefault2">
-                                            B. Default radio
+                                            B. 3
                                         </label>
                                     </div>
                                     <div class="form-check d-flex align-items-center">
                                         <input class="form-check-input mt-0 me-3" type="radio" name="flexRadioDefault"
                                             id="flexRadioDefault3">
                                         <label class="form-check-label" for="flexRadioDefault3">
-                                            C. Default radio
+                                            C. 1
                                         </label>
                                     </div>
                                     <div class="form-check d-flex align-items-center">
                                         <input class="form-check-input mt-0 me-3" type="radio" name="flexRadioDefault"
                                             id="flexRadioDefault4">
                                         <label class="form-check-label" for="flexRadioDefault4">
-                                            D. Default radio
+                                            D. √41
                                         </label>
                                     </div>
                                 </div>
-                                <div class="d-flex align-items-center justify-content-end pt-4">
+                                <div class="actions d-flex align-items-center justify-content-end pt-4">
                                     <div class="recommend">
                                         <button class="btn btn-primary btn-padding d-flex align-items-center me-2"
                                             data-bs-toggle="modal" data-bs-target="#recommendModal">
                                             <ion-icon name="sunny"></ion-icon>
                                             <span class="ms-1">Gợi ý</span>
                                         </button>
-                                        <!-- Modal -->
-                                        <div class="modal fade" id="recommendModal" tabindex="-1"
-                                            aria-labelledby="recommendModalLabel" aria-hidden="true">
-                                            <div class="modal-dialog">
-                                                <div class="modal-content">
-                                                    <div class="modal-header">
-                                                        <h5 class="modal-title" id="recommendModalLabel">Phương pháp
-                                                            giải
-                                                        </h5>
-                                                        <button type="button" class="btn-close" data-bs-dismiss="modal"
-                                                            aria-label="Close"></button>
-                                                    </div>
-                                                    <div class="modal-body">
-                                                        Ghi phương pháp tại đây!
-                                                    </div>
-                                                    <div class="modal-footer">
-                                                        <button type="button" class="btn btn-success"
-                                                            data-bs-dismiss="modal">
-                                                            Tôi đã hiểu
-                                                        </button>
-                                                    </div>
-                                                </div>
-                                            </div>
-                                        </div>
                                     </div>
                                     <button class="btn btn-success btn-padding d-flex align-items-center">
                                         <ion-icon name="arrow-forward-outline"></ion-icon>
                                         <span class="ms-1">Câu tiếp theo</span>
                                     </button>
+                                </div>
+                                <!-- Modal recommend -->
+                                <div class="modal fade" id="recommendModal" tabindex="-1"
+                                    aria-labelledby="recommendModalLabel" aria-hidden="true">
+                                    <div class="modal-dialog">
+                                        <div class="modal-content">
+                                            <div class="modal-header">
+                                                <h5 class="modal-title" id="recommendModalLabel">Phương pháp
+                                                    giải
+                                                </h5>
+                                                <button type="button" class="btn-close" data-bs-dismiss="modal"
+                                                    aria-label="Close"></button>
+                                            </div>
+                                            <div class="modal-body">
+                                                Ghi phương pháp tại đây!
+                                            </div>
+                                            <div class="modal-footer">
+                                                <button type="button" class="btn btn-success" data-bs-dismiss="modal">
+                                                    Tôi đã hiểu
+                                                </button>
+                                            </div>
+                                        </div>
+                                    </div>
                                 </div>
                             </div>
                         </div>
