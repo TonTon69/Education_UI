@@ -191,11 +191,17 @@ body {
         }
 
         &--avatar {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            margin-left: 12px;
+            border-radius: 50%;
+            border: 2px solid $primary-color;
+
             img {
                 width: 24px;
                 height: 24px;
-                margin-left: 12px;
-                border-radius: 50%;
+                border-radius: inherit;
                 object-fit: cover;
                 cursor: pointer;
             }
@@ -382,6 +388,49 @@ body {
             background: #f7f9fa;
             border-left: 5px solid red;
             padding: 18px 24px;
+            margin-bottom: 0;
+        }
+
+        .score__achieved,
+        .homework__time,
+        .questions__done {
+            border: 1px solid #dee2e6;
+            text-align: center;
+
+            .top {
+                padding: 10px;
+                color: $white-color;
+            }
+
+            .bottom {
+                padding: 30px 10px;
+                font-size: 22px;
+                font-weight: 700;
+            }
+        }
+        
+        .score__achieved {
+            color: #44a500;
+
+            .top {
+                background: #44a500;
+            }
+        }
+
+        .questions__done {
+            color: #ec8e00;
+
+            .top {
+                background: #ec8e00;
+            }
+        }
+
+        .homework__time {
+            color: #77909b;
+
+            .top {
+                background: #77909b;
+            }
         }
 
         .quiz {
@@ -402,7 +451,7 @@ body {
                 visibility : hidden;
             }
 
-            &.show-scrollbar::-webkit-scrollbar-thumb {
+            &:hover::-webkit-scrollbar-thumb {
                 opacity: 1;
                 visibility : visible;
             }

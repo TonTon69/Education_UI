@@ -26,22 +26,14 @@ $(document).ready(function () {
     });
 
     // Highlight the active link in a navigation menu
-    for (var i = 0; i < document.links.length; i++) {
-        if (document.links[i].href === document.URL) {
-            document.links[i].classList.add("active");
-        }
-    }
+    // for (var i = 0; i < document.links.length; i++) {
+    //     if (document.links[i].href === document.URL) {
+    //         document.links[i].classList.add("active");
+    //     }
+    // }
 
-    // custom scrollbar exercise
-    const quiz = $(".quiz");
-    quiz.scroll(function() {
-        if (this.scrollTop > 0) {
-            quiz.addClass("show-scrollbar");
-        }
-        else {
-            setTimeout(function() {
-               quiz.removeClass("show-scrollbar");
-            }, 2000);
-        }
+    //StopWatch
+    $(function () {
+        $('#stop__watch').stopwatch().stopwatch('start');
     });
 });

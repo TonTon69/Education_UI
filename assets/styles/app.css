@@ -219,11 +219,25 @@ body::-webkit-scrollbar-thumb {
   font-size: 1.5rem;
 }
 
+.header__actions--avatar {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  margin-left: 12px;
+  border-radius: 50%;
+  border: 2px solid #113685;
+}
+
 .header__actions--avatar img {
   width: 24px;
   height: 24px;
-  margin-left: 12px;
-  border-radius: 50%;
+  border-radius: inherit;
   -o-object-fit: cover;
      object-fit: cover;
   cursor: pointer;
@@ -455,6 +469,53 @@ body::-webkit-scrollbar-thumb {
   background: #f7f9fa;
   border-left: 5px solid red;
   padding: 18px 24px;
+  margin-bottom: 0;
+}
+
+.main .exercise .score__achieved,
+.main .exercise .homework__time,
+.main .exercise .questions__done {
+  border: 1px solid #dee2e6;
+  text-align: center;
+}
+
+.main .exercise .score__achieved .top,
+.main .exercise .homework__time .top,
+.main .exercise .questions__done .top {
+  padding: 10px;
+  color: #fff;
+}
+
+.main .exercise .score__achieved .bottom,
+.main .exercise .homework__time .bottom,
+.main .exercise .questions__done .bottom {
+  padding: 30px 10px;
+  font-size: 22px;
+  font-weight: 700;
+}
+
+.main .exercise .score__achieved {
+  color: #44a500;
+}
+
+.main .exercise .score__achieved .top {
+  background: #44a500;
+}
+
+.main .exercise .questions__done {
+  color: #ec8e00;
+}
+
+.main .exercise .questions__done .top {
+  background: #ec8e00;
+}
+
+.main .exercise .homework__time {
+  color: #77909b;
+}
+
+.main .exercise .homework__time .top {
+  background: #77909b;
 }
 
 .main .exercise .quiz {
@@ -477,7 +538,7 @@ body::-webkit-scrollbar-thumb {
   visibility: hidden;
 }
 
-.main .exercise .quiz.show-scrollbar::-webkit-scrollbar-thumb {
+.main .exercise .quiz:hover::-webkit-scrollbar-thumb {
   opacity: 1;
   visibility: visible;
 }
