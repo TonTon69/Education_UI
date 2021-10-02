@@ -118,6 +118,10 @@ body {
     font-size: 0.9rem !important;
 }
 
+.fs-8 {
+    font-size: 0.8rem !important;
+}
+
 .text-primary {
     color: $primary-color;
     font-weight: 600;
@@ -860,6 +864,8 @@ body {
             }
         }
     }
+
+    @import "./blog";
 }
 
 .about {
@@ -1099,3 +1105,6 @@ body {
         }
     }
 }
+
+
+@import "./login";
