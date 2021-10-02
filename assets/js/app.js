@@ -33,7 +33,7 @@ $(document).ready(function () {
     // }
 
     //StopWatch
-    $(function () {
-        $('#stop__watch').stopwatch().stopwatch('start');
-    });
+    // $(function () {
+    //     $('#stop__watch').stopwatch().stopwatch('start');
+    // });
 });
