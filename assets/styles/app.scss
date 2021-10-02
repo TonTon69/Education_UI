@@ -1,5 +1,7 @@
 @import "./variables";
 
+// css login
+@import "./login";
 // hàm để responsive
 @mixin mobile {
     @media (max-width: $mobile) {
@@ -256,7 +258,8 @@ body {
         }
     }
 }
-
+// code css blog
+@import "./blog";
 //code main content
 .main {
     min-height: 100vh;

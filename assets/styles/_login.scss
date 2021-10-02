@@ -1,0 +1,37 @@
+html,
+body {
+    width: 100%;
+    height: 100%;
+    font-family: "Releway";
+    font-size: 16px;
+    font-weight: bold;
+}
+.row-container {
+    border: 2px solid #fff;
+    border-radius: 20px;
+    margin-top: 30vh;
+    padding: 30px;
+    -webkit-box-shadow: 0px 0px 18px 3px rgba(246, 255, 254, 0.92);
+    box-shadow: 0px 0px 18px 3px rgba(246, 255, 254, 0.92);
+    h3,
+    label {
+        text-shadow: 2px 2px 10px #fff;
+        font-weight: 500;
+    }
+}
+
+.background {
+    background: url("https://msmobile.com.vn/upload_images/images/hinh-nen-powerpoint-mau-xanh-da-troi-1.jpg")
+        no-repeat;
+    background-size: cover;
+    width: 100%;
+    height: 100%;
+}
+.form-group {
+    margin-top: 15px;
+    border-radius: 10px;
+    .emailError,
+    .passwordError {
+        color: red;
+    }
+}
